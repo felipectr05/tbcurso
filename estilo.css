@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --p: #0e1378;
+    --s: rgb(90, 134, 196);
+    --c: rgb(176, 211, 231);
+    --w: white;
+    --b: black;
+}
+
+header{
+    height: 9rem;
+    color: var(--w);
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    text-shadow: 0.2rem 0rem 0rem var(--b);
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: var(--p);
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+header nav ul li a{
+    color: var(--w);
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color:  var(--s);
+    font-size: 2rem;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 11rem);
+    text-align: justify;
+}
+
+.text article{
+    width: 85%;
+    padding: 5%;
+    font-size: larger;
+}
+
+.text article ol{
+    list-style-type: upper-roman;
+}
+
+.text article ul{
+    list-style-type: square;
+}
+
+.text article ul, ol{
+    margin-left: 3rem;
+}
+
+/*cursos*/
+
+.tab table{
+    width: 80%;
+    border-collapse: collapse;
+    height: 80%;
+    font-size: larger;
+}
+
+.tab tr td, main tr th{
+    text-align: center;
+    border: 0.2rem solid var(--s);
+}
+
+.tab div{
+    width: 85%;
+    padding: 5%;
+}
+
+.tab .val{
+    text-align: left;
+    padding: 1rem;
+}
+
+.col, .pt{
+    font-weight: bold;
+}
+
+.pt{
+    font-size: x-large;
+}
+
+/*questoes*/
+
+.faq{
+    flex-direction: column;
+}
+
+.perg, .resp li{
+    margin: 5%;
+    padding: 5%;
+    font-size: larger;
+}
+
+.perg a, .resp li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--b)
+}
+
+.perg a:hover, .resp li a:hover{
+    font-size: 2rem;
+    color: var(--s);
+}
+
+.perg{
+    height: 100vh;
+}
+
+.perg ol li{
+    font-weight: bolder;
+}
+
+.resp{
+    list-style-type: none;
+}
+
+.resp li{
+    height: 100vh;
+    background-color: var(--c);
+    border: 1rem solid var(--c);
+    border-radius: 5%;
+}
+
+
+footer{
+    height: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    background-color: var(--p);  
+    color: var(--s); 
+    border-bottom: 0.5rem solid var(--p);
+    border-radius: 5%;
+}
+
+footer p{
+    padding-left: 1rem;
+    color: var(--w);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/computer.png" type="image/x-icon">
+    <title>Curso de Informática</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>CEFET-MG - Campus Varginha - Curso Técnico</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="curso.html">Curso</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="form">
+        <section>
+            <form action="" method="post" enctype="multipart/form-data">
+                <legend>Contatos</legend>
+                
+                <label for="name">nome:</label>
+                <input type="text" name="name" id="name" placeholder="João"><br>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" placeholder="jão@email" required> <br>
+
+
+                <input type="radio" name="sex" id="sexoM" value="M" required>
+                <label for="sexoM">Masculino</label>
+                <input type="radio" name="sex" id="sexoF" value="F">
+                <label for="sexoF">Feminino</label>
+                <br>
+
+
+                <label for="estado">Estado</label>/<label for="cidade">Cidade</label>
+                <select name="estado" id="estado">
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SE">SE</option>
+                    <option value="SP">SP</option>
+                </select>
+                <input type="text" name="cidade" id="cidade" placeholder="Rio de Janeiro"> <br>
+
+
+                <label for="arq">Arquivos</label>
+                <input type="file" name="file" id="arq">
+                <br>
+                <label for="sug">Sugestões</label> <br>
+                <textarea name="sug" id="sug" cols="30" rows="9" required></textarea>
+
+                <br>
+                <button type="submit"> <span>Enviar</span> </button>
+                <button type="reset"><span>Limpar</span></button>
+            </fieldset>
+        </form>
+    </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>©copyleft</p>
+    </footer>
+</body>
+
+</html>
